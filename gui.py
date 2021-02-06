@@ -15,7 +15,9 @@ class Ui_mainWindow(object):
     def setupUi(self, mainWindow):
         self.date = None
         mainWindow.setObjectName("mainWindow")
-        mainWindow.resize(1079, 717)
+        mainWindow.resize(1030, 720)
+        mainWindow.setMinimumSize(QtCore.QSize(1030, 720))
+        mainWindow.setMaximumSize(QtCore.QSize(1030, 720))
         self.centralwidget = QtWidgets.QWidget(mainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.comboBox_city = QtWidgets.QComboBox(self.centralwidget)
@@ -41,7 +43,7 @@ class Ui_mainWindow(object):
         # self.comboBox_laguage.addItem("")
         # self.comboBox_laguage.addItem("")
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton.setGeometry(QtCore.QRect(750, 90, 231, 41))
+        self.pushButton.setGeometry(QtCore.QRect(750, 20, 231, 41))
         font = QtGui.QFont()
         font.setFamily("Arial Black")
         font.setPointSize(12)
